@@ -4,7 +4,6 @@ img {
 }
 body {
   background-image: url(../assets/img/bg-image.png);
-  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,6 +11,10 @@ body {
 }
 
 body::-webkit-scrollbar {
+  display: none;
+}
+
+main::-webkit-scrollbar {
   display: none;
 }
 /* Menú con puntos */
@@ -25,6 +28,7 @@ body::-webkit-scrollbar {
   justify-content: space-around;
   left: 3rem;
   top: 30rem;
+  cursor: pointer;
 }
 
 .navmarks__dot {
@@ -32,11 +36,21 @@ body::-webkit-scrollbar {
   background-color: var(--brown);
   width: 1.5rem;
   height: 1.5rem;
+  transition: background 100ms ease-in;
+  opacity: 0.4;
+}
+
+.navmarks__dot--active,
+.navmarks__dot:hover {
+  opacity: 1;
+}
+
+.navmarks__dot--negative {
+  background-color: white;
 }
 
 main {
-  grid-row: 1/2;
-  height: 100%;
+  height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
@@ -46,7 +60,7 @@ main section {
   display: grid;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: 3rem 10rem auto auto 2rem;
-  scroll-snap-align: end;
+  scroll-snap-align: start;
 }
 
 /* Seccion 1 */
@@ -148,7 +162,7 @@ main section {
 /* Seccion 5 */
 .contactame {
   display: grid;
-  height: 100vh;
+  height: 90vh;
   background-color: var(--brown);
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 30% auto auto 30%;
@@ -180,7 +194,12 @@ main section {
   margin-top: 4rem;
 }
 
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
 footer {
+  width: 100%;
   height: 10vh;
   background-color: white;
   display: flex;

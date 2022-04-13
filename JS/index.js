@@ -1,15 +1,4 @@
-const header = document.querySelector('header');
-const footer = document.querySelector('footer');
-const contactame = document.querySelector('.contactame');
+import contactameObserver from './dark-bg.js';
 
-const contactameObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            header.classList.add('header__negative');
-        } else {
-            header.classList.remove('header__negative');
-        }
-    });
-}, { threshold: 1 } );
-
+const contactame = document.querySelector('#contactame');
 contactameObserver.observe(contactame);
