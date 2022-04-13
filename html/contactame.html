@@ -1,0 +1,72 @@
+<!-- Desarrolladora: Andrea Sierra
+Curso: Programación Web 213025_1
+Fecha: 20 de marzo de 2022 -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Andrea Sierra - Sobre mí">
+        <link rel="stylesheet" href="../styles/sobre-mi.css">
+        <script src="https://kit.fontawesome.com/dff284d094.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <a class="header__logo" href="../html/index.html">AS</a>
+            <div class="socials">
+                <a class="socials__ig" href="https://www.instagram.com/peqdeli_baq/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="socials__in" href="https://www.linkedin.com/in/andrea-sierra-a557961b8/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="menubar">
+                <div class="menubar__line menubar__line--1"></div>
+                <div class="menubar__line menubar__line--2"></div>
+                <div class="menubar__line menubar__line--3"></div>
+            </div>
+            <nav class="navbar hidden">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="./html/sobre-mi.html">Sobre mí</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./html/diseño.html">Diseño</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./html/otras.html">Otras habilidades</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./html/contactame.html">Contáctame</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2 class="main__title">¿Interesad@?</h2>
+            <form class="form" action="">
+                <label class="form__label" for="nombre">
+                    <span class="form__name">Nombre*</span>
+                    <input class="form__name-input" type="text" name="nombre" id="nombre" autocomplete="name" required>
+                </label>
+                <label class="form__label" for="correo">
+                    <span class="form__email">Correo*</span>
+                    <input class="form__email-input" type="email" name="correo" id="correo" autocomplete="email" required>
+                </label>
+                <label class="form__label" for="asunto">
+                    <span class="form__subject">Asunto*</span>
+                    <input class="form__subject-input" type="text" name="asunto" id="asunto" required>
+                </label>
+                <label class="form__label" for="mensaje">
+                    <span class="form__mensaje">Mensaje*</span>
+                    <input class="form__mensaje-input" type="text" name="mensaje" id="mensaje" required>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <footer>
+            <figure class="footer__arrow">
+                <img src="../assets/icons/arrow.png" alt="Go back">
+            </figure>
+            <a class="footer__back" href="./index.html">Volver</a>
+            <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
+        </footer>
+    </body>
+</html>

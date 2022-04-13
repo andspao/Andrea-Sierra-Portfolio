@@ -1,0 +1,175 @@
+<!-- Desarrolladora: Andrea Sierra
+Curso: Programación Web 213025_1
+Fecha: 20 de marzo de 2022 -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio universitario de Andrea Sierra"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/dff284d094.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@100;400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a class="header__logo" href="#">AS</a>
+      <div class="socials">
+        <a
+          class="socials__ig"
+          target="_blank"
+          href="https://www.instagram.com/peqdeli_baq/"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="socials__in"
+          target="_blank"
+          href="https://www.linkedin.com/in/andrea-sierra-a557961b8/"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="menubar">
+        <div class="menubar__line menubar__line--1"></div>
+        <div class="menubar__line menubar__line--2"></div>
+        <div class="menubar__line menubar__line--3"></div>
+      </div>
+      <nav class="navbar hidden">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="./html/sobre-mi.html">Sobre mí</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./html/diseño.html">Diseño</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./html/otras.html">Otras habilidades</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./html/contactame.html">Contáctame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- elementos que se mantienen fijos en el main -->
+      <!-- Fondo se colocará como background image en el CSS -->
+      <div class="navmarks">
+        <a href="#home" class="navmarks__link navmarks__link--1">
+          <div class="navmarks__dot"></div>
+        </a>
+        <a href="#sobre-mi" class="navmarks__link navmarks__link--2">
+          <div class="navmarks__dot"></div>
+        </a>
+        <a href="#diseño" class="navmarks__link navmarks__link--3">
+          <div class="navmarks__dot"></div>
+        </a>
+        <a href="#otras" class="navmarks__link navmarks__link--4">
+          <div class="navmarks__dot"></div>
+        </a>
+        <a href="#contactame" class="navmarks__link navmarks__link--5">
+          <div class="navmarks__dot"></div>
+        </a>
+      </div>
+      <!-- elementos que se mantienen fijos en el main -->
+
+      <section class="home" id="home">
+        <img
+          class="home__icons"
+          src="../assets/icons/all-icons.png"
+          alt="ícono de diseño, programación, campamento, cupcake"
+        />
+        <h2 class="home__text home__text--subtitle">Yo soy</h2>
+        <h1 class="home__text home__text--title">Andrea Sierra</h1>
+        <p class="home__text home__text--p">
+          Estudiante de Ingeniería Multimedia
+        </p>
+        <img
+          class="home__arrow"
+          src="../assets/icons/arrow.png"
+          alt="Scroll down"
+        />
+        <img
+          class="home__picture"
+          src="../assets/img/home-pic.png"
+          alt="Foto de Andrea Sierra"
+        />
+      </section>
+
+      <section class="sobre-mi" id="sobre-mi">
+        <img
+          class="sobre-mi__icons section__icons"
+          src="../assets/icons/icon-campcupk.png"
+          alt="Ícono de campamento y cupcake"
+        />
+        <h3 class="sobre-mi__text section__text">Sobre mí</h3>
+        <a class="section__link section__button" href="">Saber más</a>
+        <img
+          class="sobre-mi__picture section__picture"
+          src="../assets/img/sobre-mi-pic.png"
+          alt="Foto de Andrea Sierra"
+        />
+      </section>
+
+      <section class="diseño" id="diseño">
+        <img
+          class="diseño__icons section__icons"
+          src="../assets/icons/icon-diseño.png"
+          alt="Ícono de diseño gráfico"
+        />
+        <h3 class="diseño__text section__text">Diseño</h3>
+        <a class="diseño__link section__button" href="">Saber más</a>
+        <img
+          class="diseño__picture section__picture"
+          src="../assets/img/diseño-pic.png"
+          alt="Foto de Andrea Sierra"
+        />
+      </section>
+
+      <section class="otras" id="otras">
+        <img
+          class="otras__icons section__icons"
+          src="../assets/icons/icon-programacion.png"
+          alt="Ícono de programación"
+        />
+        <h3 class="otras__text section__text">Otras habilidades</h3>
+        <a class="otras__link section__button" href="">Saber más</a>
+        <img
+          class="otras__picture section__picture"
+          src="../assets/img/otras-pic.png"
+          alt="Foto de Andrea Sierra"
+        />
+      </section>
+
+      <section class="contactame" id="contactame">
+        <h3 class="contactame__text">¿Interesad@?</h3>
+        <a class="contactame__link section__button" href="">Contáctame</a>
+        <img
+          class="contactame__arrow"
+          src="../assets/icons/click-here.png"
+          alt="Flecha"
+        />
+      </section>
+    </main>
+    <footer>
+      <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
+    </footer>
+
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
