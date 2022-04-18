@@ -1,7 +1,5 @@
-img {
-  width: 10%;
-  height: auto;
-}
+/* Configuración del Bg */
+
 body {
   background-image: url(../assets/img/bg-image.png);
   background-attachment: fixed;
@@ -10,17 +8,14 @@ body {
   background-size: cover;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 main::-webkit-scrollbar {
   display: none;
 }
-/* Menú con puntos */
+
+/* Indicadores de navegación (Navmarks) */
 
 .navmarks {
-  position: absolute;
+  z-index: 0;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -40,7 +35,6 @@ main::-webkit-scrollbar {
   opacity: 0.4;
 }
 
-.navmarks__dot--active,
 .navmarks__dot:hover {
   opacity: 1;
 }
@@ -49,11 +43,15 @@ main::-webkit-scrollbar {
   background-color: white;
 }
 
+/* Scroll type main */
+
 main {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
+
+/* Layout main */
 
 main section {
   height: 100vh;
@@ -64,6 +62,7 @@ main section {
 }
 
 /* Seccion 1 */
+
 .home__arrow {
   height: 10rem;
   width: auto;
@@ -101,7 +100,8 @@ main section {
   font-size: 2.7rem;
 }
 
-/* Seccion 2 y general */
+/* Seccion 2 y reutilizable */
+
 .section__icons {
   height: 10rem;
   width: auto;
@@ -133,11 +133,16 @@ main section {
   text-align: center;
   font-size: 3rem;
   color: white;
-  font-weight: 500;
+  font-weight: var(--regular);
   border-radius: 10px;
+  cursor: pointer;
+}
+.section__button:hover {
+  background-color: var(--brown);
 }
 
 /* Seccion 3 */
+
 .diseño__icons {
   height: 11rem;
 }
@@ -147,6 +152,7 @@ main section {
 }
 
 /* Seccion 4 */
+
 .otras__picture {
   grid-column: 4/6;
   justify-self: end;
@@ -160,6 +166,7 @@ main section {
 }
 
 /* Seccion 5 */
+
 .contactame {
   display: grid;
   height: 90vh;
@@ -184,6 +191,11 @@ main section {
   margin-top: 15rem;
 }
 
+.contactame__link:hover {
+  background-color: white;
+  color: var(--aqua);
+}
+
 .contactame__arrow {
   width: 6rem;
   height: auto;
@@ -194,10 +206,8 @@ main section {
   margin-top: 4rem;
 }
 
-.page-container {
-  min-height: 100vh;
-  position: relative;
-}
+/* Footer */
+
 footer {
   width: 100%;
   height: 10vh;

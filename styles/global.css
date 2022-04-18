@@ -1,3 +1,5 @@
+/*Normalize*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +12,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+
 :root {
   --brown: #a5593c;
   --transparent_brown: rgba(165, 89, 60, 0.11);
@@ -18,15 +30,17 @@ html {
   --aqua: #00b3b9;
   --pink: #e9b3a3;
   --dark-grey: #292117;
-}
-
-a {
-  text-decoration: none;
+  --light: 100;
+  --medium: 400;
+  --regular: 500;
+  --semi-bold: 800;
+  --bold: 900;
 }
 
 /* header */
 
-header {
+.header__top-bar {
+  z-index: 2;
   position: fixed;
   height: 5vh;
   width: 100%;
@@ -37,16 +51,13 @@ header {
   transition: background 250ms ease-in;
 }
 
-.hidden {
-  display: none;
-}
-
 .header__logo {
   grid-column: 2/3;
   font-size: 3rem;
   font-family: "League Spartan", sans-serif;
   color: var(--brown);
   margin-top: 3px;
+  transition: all 0.3s ease;
 }
 
 .socials {
@@ -54,15 +65,17 @@ header {
   justify-self: end;
 }
 
-.socials i {
+.fa-brands {
   font-size: 2.5rem;
   color: var(--brown);
   margin: 2px;
+  transition: all 0.3s ease;
 }
 
 .menubar {
   grid-column: 5/6;
   justify-self: end;
+  cursor: pointer;
 }
 
 .menubar__line {
@@ -71,11 +84,81 @@ header {
   background-color: var(--brown);
   margin: 5px;
   border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
-/* Header negative */
+/* Header variations */
+
 .header__negative {
   background-color: white;
 }
 
-/* footer */
+.header__no-bg .header__logo {
+  color: white;
+}
+
+.header__no-bg .fa-brands {
+  color: white;
+}
+
+.header__no-bg .menubar__line {
+  background-color: white;
+}
+
+/* Menu Hidden */
+
+.navbar {
+  transition: all 0.3s linear;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.navbar-active {
+  opacity: 1;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--pink);
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item {
+  list-style: none;
+  padding: 3em;
+  width: 100rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu__link {
+  font-size: 6rem;
+  font-weight: var(--medium);
+  color: white;
+}
+
+/* menubar animation */
+
+.line-toggle .menubar__line--1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line-toggle .menubar__line--2 {
+  opacity: 0;
+}
+
+.line-toggle .menubar__line--3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

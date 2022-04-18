@@ -3,177 +3,278 @@ Curso: Programación Web 213025_1
 Fecha: 20 de marzo de 2022 -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Andrea Sierra - Sobre mí">
-        <link rel="stylesheet" href="../styles/sobre-mi.css">
-        <script src="https://kit.fontawesome.com/dff284d094.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andrea Sierra - Diseño" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/diseño.css" />
+    <script
+      src="https://kit.fontawesome.com/dff284d094.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@100;400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header>
-            <a class="header__logo" href="../html/index.html">AS</a>
-            <div class="socials">
-                <a class="socials__ig" href="https://www.instagram.com/peqdeli_baq/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="socials__in" href="https://www.linkedin.com/in/andrea-sierra-a557961b8/">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
+  <body>
+    <header>
+      <section class="header__top-bar">
+        <a class="header__logo" href="../html/index.html">AS</a>
+        <div class="socials">
+          <a
+            class="socials__ig"
+            target="_blank"
+            href="https://www.instagram.com/peqdeli_baq/"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="socials__in"
+            target="_blank"
+            href="https://www.linkedin.com/in/andrea-sierra-a557961b8/"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="menubar">
+          <div class="menubar__line menubar__line--1"></div>
+          <div class="menubar__line menubar__line--2"></div>
+          <div class="menubar__line menubar__line--3"></div>
+        </div>
+      </section>
+      <nav class="navbar hidden">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="./sobre-mi.html">Sobre mí</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./diseño.html">Diseño</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./otras.html">Otras habilidades</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./contactame.html">Contáctame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="diseño">
+        <img
+          class="diseño__icons"
+          src="../assets/icons/icon-diseño.png"
+          alt="Ícono de diseño"
+        />
+
+        <h2 class="diseño__text diseño__text--title">Diseño</h2>
+        <p class="diseño__text diseño__text--subtitle">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+          voluptate molestiae numquam necessitatibus consequatur labore soluta
+          pariatur ab libero deserunt cum, rerum dolore cupiditate quae? Nostrum
+          ratione error obcaecati sed!
+        </p>
+        <img
+          class="diseño__picture"
+          src="../assets/img/diseño-pic.png"
+          alt="Foto de Andrea Sierra"
+        />
+        <img
+          class="diseño__arrow"
+          src="../assets/icons/arrow.png"
+          alt="Scroll down"
+        />
+
+        <!-- Fondo de la sección con background image en css -->
+      </section>
+      <section class="content content1">
+        <div class="content__info">
+          <div class="content__line content1__item"></div>
+          <p class="content__number content1__text">01</p>
+          <p class="content1__text content__text--md">Proyecto VLA</p>
+          <p class="content__text--sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis! <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis!
+          </p>
+        </div>
+        <div class="gallery content1__item">
+          <div class="container container1">
+            <img
+              class="container__img"
+              src="../assets/img/VLA1.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container1__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
             </div>
-            <div class="menubar">
-                <div class="menubar__line menubar__line--1"></div>
-                <div class="menubar__line menubar__line--2"></div>
-                <div class="menubar__line menubar__line--3"></div>
+          </div>
+          <div class="container container2">
+            <img
+              class="container__img"
+              src="../assets/img/VLA2.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container2__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
             </div>
-            <nav class="navbar hidden">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="./html/sobre-mi.html">Sobre mí</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/diseño.html">Diseño</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/otras.html">Otras habilidades</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/contactame.html">Contáctame</a></li>
-                </ul>
-            </nav>
-        </header>
+          </div>
+          <div class="container container3">
+            <img
+              class="container__img"
+              src="../assets/img/VLA3.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container3__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section class="diseño">
-                <figure class="diseño__icons">
-                    <img src="../assets/icons/icon-diseño.png" alt="Ícono de diseño">
-                </figure>
-                <h2 class="diseño__text diseño__text--title">Diseño</h2>
-                <p class="diseño__text diseño__text--subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Enim voluptate molestiae numquam necessitatibus consequatur labore soluta pariatur ab libero deserunt
-                    cum, rerum dolore cupiditate quae? Nostrum ratione error obcaecati sed!</p>
-                <figure class="diseño__picture">
-                    <img src="../assets/img/diseño-pic.png" alt="Foto de Andrea Sierra">
-                </figure>
-                <figure class="diseño__arrow">
-                    <img src="../assets/icons/arrow.png" alt="Scroll down">
-                </figure>
-                <!-- Fondo de la sección con background image en css -->
-            </section>
-            <section class="content content1">
-                <div class="content1__info">
-                    <div class="content1__line"></div>
-                    <p class="content1__number">01</p>
-                    <p class="content1__text content__text--md">Proyecto VLA</p>
-                    <p class="content1_text content__text--sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum necessitatibus eaque ea error, velit mollitia voluptas eveniet culpa corporis impedit placeat, nihil iure odio molestias dolorem rem assumenda. Perferendis!</p>
-                </div>
-                <div class="gallery">
-                    <figure class="gallery__arrow gallery__arrow--left"><i class="fa-light fa-angle-left"></i></figure>
-                    <figure class="gallery__arrow gallery__arrow--right"><i class="fa-light fa-angle-right"></i></figure>
-                    <div class="container container1">
-                        <img class="container1__img" src="../assets/img/VLA1.png" alt="Foto del proyecto VLA">
-                        <div class="container1__description hidden">
-                            <p class="container1__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container2">
-                        <img class="container2__img" src="../assets/img/VLA2.png" alt="Foto del proyecto VLA">
-                        <div class="container2__description hidden">
-                            <p class="container2__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container3">
-                        <img class="container3__img" src="../assets/img/VLA3.png" alt="Foto del proyecto VLA">
-                        <div class="container3__description hidden">
-                            <p class="container3__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container4">
-                        <img class="container4__img" src="../assets/img/VLA4.png" alt="Foto del proyecto VLA">
-                        <div class="container4__description hidden">
-                            <p class="container4__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section class="content content2">
+        <div class="content__info">
+          <div class="content__line content2__item"></div>
+          <p class="content__number content2__text">02</p>
+          <p class="content2__text content__text--md">Redes Sociales ASC</p>
+          <p class="content__text--sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis! <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis!
+          </p>
+        </div>
+        <div class="gallery content2__item">
+          <div class="container container1">
+            <img
+              class="container__img"
+              src="../assets/img/Redes1.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container1__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+          <div class="container container2">
+            <img
+              class="container__img"
+              src="../assets/img/Redes2.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container2__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+          <div class="container container3">
+            <img
+              class="container__img"
+              src="../assets/img/Redes3.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container3__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section class="content content2">
-                <div class="content2__info">
-                    <div class="content2__line"></div>
-                    <p class="content2__number">02</p>
-                    <p class="content2__text content__text--md">Redes Sociales ASC</p>
-                    <p class="content2_text content__text--sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum necessitatibus eaque ea error, velit mollitia voluptas eveniet culpa corporis impedit placeat, nihil iure odio molestias dolorem rem assumenda. Perferendis!</p>
-                </div>
-                <div class="gallery">
-                    <figure class="gallery__arrow gallery__arrow--left"><i class="fa-light fa-angle-left"></i></figure>
-                    <figure class="gallery__arrow gallery__arrow--right"><i class="fa-light fa-angle-right"></i></figure>
-                    <div class="container container1">
-                        <img class="container1__img" src="../assets/img/Redes1.png" alt="Foto del proyecto VLA">
-                        <div class="container1__description hidden">
-                            <p class="container1__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container2">
-                        <img class="container2__img" src="../assets/img/Redes2.png" alt="Foto del proyecto VLA">
-                        <div class="container2__description hidden">
-                            <p class="container2__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container3">
-                        <img class="container3__img" src="../assets/img/Redes3.png" alt="Foto del proyecto VLA">
-                        <div class="container3__description hidden">
-                            <p class="container3__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container4">
-                        <img class="container4__img" src="../assets/img/Redes4.png" alt="Foto del proyecto VLA">
-                        <div class="container4__description hidden">
-                            <p class="container4__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section class="content content3">
+        <div class="content__info">
+          <div class="content__line content3__item"></div>
+          <p class="content__number content3__text">03</p>
+          <p class="content3__text content__text--md">Redes Sociales ASC</p>
+          <p class="content__text--sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis! <br /><br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            dolorum necessitatibus eaque ea error, velit mollitia voluptas
+            eveniet culpa corporis impedit placeat, nihil iure odio molestias
+            dolorem rem assumenda. Perferendis!
+          </p>
+        </div>
+        <div class="gallery content3__item">
+          <div class="container container1">
+            <img
+              class="container__img"
+              src="../assets/img/Redes5.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container1__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+          <div class="container container2">
+            <img
+              class="container__img"
+              src="../assets/img/Redes6.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container2__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+          <div class="container container3">
+            <img
+              class="container__img"
+              src="../assets/img/Redes7.png"
+              alt="Foto del proyecto VLA"
+            />
+            <div class="container__description hidden">
+              <p class="container3__text container__text">
+                Descripción de la imagen al hacer hover
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <section class="content content3">
-                <div class="content3__info">
-                    <div class="content3__line"></div>
-                    <p class="content3__number">03</p>
-                    <p class="content3__text content__text--md">Redes Sociales ASC</p>
-                    <p class="content3_text content__text--sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum necessitatibus eaque ea error, velit mollitia voluptas eveniet culpa corporis impedit placeat, nihil iure odio molestias dolorem rem assumenda. Perferendis!</p>
-                </div>
-                <div class="gallery">
-                    <figure class="gallery__arrow gallery__arrow--left"><i class="fa-light fa-angle-left"></i></figure>
-                    <figure class="gallery__arrow gallery__arrow--right"><i class="fa-light fa-angle-right"></i></figure>
-                    <div class="container container1">
-                        <img class="container1__img" src="../assets/img/Redes5.png" alt="Foto del proyecto VLA">
-                        <div class="container1__description hidden">
-                            <p class="container1__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container2">
-                        <img class="container2__img" src="../assets/img/Redes6.png" alt="Foto del proyecto VLA">
-                        <div class="container2__description hidden">
-                            <p class="container2__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container3">
-                        <img class="container3__img" src="../assets/img/Redes7.png" alt="Foto del proyecto VLA">
-                        <div class="container3__description hidden">
-                            <p class="container3__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                    <div class="container container4">
-                        <img class="container4__img" src="../assets/img/Redes8.png" alt="Foto del proyecto VLA">
-                        <div class="container4__description hidden">
-                            <p class="container4__text container__text">Descripción de la imagen al hacer hover</p> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <figure class="footer__arrow">
-                <img src="../assets/icons/arrow.png" alt="Go back">
-            </figure>
-            <a class="footer__back" href="./index.html">Volver</a>
-            <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
-        </footer>
-    </body>
-
+    <footer>
+      <a class="footer__back" href="./index.html">
+        <img
+          class="footer__arrow"
+          src="../assets/icons/arrow-back.png"
+          alt="Go back"
+        />
+        Volver
+      </a>
+      <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
+    </footer>
+    <script type="module">
+      import { navShow } from "../JS/exports.js";
+      navShow();
+    </script>
+  </body>
 </html>

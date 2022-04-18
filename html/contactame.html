@@ -3,70 +3,137 @@ Curso: Programación Web 213025_1
 Fecha: 20 de marzo de 2022 -->
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Andrea Sierra - Sobre mí">
-        <link rel="stylesheet" href="../styles/sobre-mi.css">
-        <script src="https://kit.fontawesome.com/dff284d094.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Andrea Sierra - Contáctame" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/contactame.css" />
+    <script
+      src="https://kit.fontawesome.com/dff284d094.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@100;400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <header>
-            <a class="header__logo" href="../html/index.html">AS</a>
-            <div class="socials">
-                <a class="socials__ig" href="https://www.instagram.com/peqdeli_baq/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="socials__in" href="https://www.linkedin.com/in/andrea-sierra-a557961b8/">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
-            <div class="menubar">
-                <div class="menubar__line menubar__line--1"></div>
-                <div class="menubar__line menubar__line--2"></div>
-                <div class="menubar__line menubar__line--3"></div>
-            </div>
-            <nav class="navbar hidden">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="./html/sobre-mi.html">Sobre mí</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/diseño.html">Diseño</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/otras.html">Otras habilidades</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./html/contactame.html">Contáctame</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <section class="header__top-bar">
+        <a class="header__logo" href="./index.html">AS</a>
+        <div class="socials">
+          <a
+            class="socials__ig"
+            target="_blank"
+            href="https://www.instagram.com/peqdeli_baq/"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            class="socials__in"
+            target="_blank"
+            href="https://www.linkedin.com/in/andrea-sierra-a557961b8/"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="menubar">
+          <div class="menubar__line menubar__line--1"></div>
+          <div class="menubar__line menubar__line--2"></div>
+          <div class="menubar__line menubar__line--3"></div>
+        </div>
+      </section>
+      <nav class="navbar hidden">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="./sobre-mi.html">Sobre mí</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./diseño.html">Diseño</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./otras.html">Otras habilidades</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./contactame.html">Contáctame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-            <h2 class="main__title">¿Interesad@?</h2>
-            <form class="form" action="">
-                <label class="form__label" for="nombre">
-                    <span class="form__name">Nombre*</span>
-                    <input class="form__name-input" type="text" name="nombre" id="nombre" autocomplete="name" required>
-                </label>
-                <label class="form__label" for="correo">
-                    <span class="form__email">Correo*</span>
-                    <input class="form__email-input" type="email" name="correo" id="correo" autocomplete="email" required>
-                </label>
-                <label class="form__label" for="asunto">
-                    <span class="form__subject">Asunto*</span>
-                    <input class="form__subject-input" type="text" name="asunto" id="asunto" required>
-                </label>
-                <label class="form__label" for="mensaje">
-                    <span class="form__mensaje">Mensaje*</span>
-                    <input class="form__mensaje-input" type="text" name="mensaje" id="mensaje" required>
-                </label>
-                <button type="submit">Enviar</button>
-            </form>
-        </main>
+    <main>
+      <h2 class="main__title">¿Interesad@?</h2>
+      <form class="form" id="formulario" action="">
+        <label class="form__label" for="nombre">
+          <span class="form__name">Nombre*</span>
+          <input
+            class="form__name-input"
+            placeholder="Escribe tu nombre"
+            type="text"
+            name="nombre"
+            id="nombre"
+            autocomplete="name"
+            required
+          />
+        </label>
+        <label class="form__label" for="correo">
+          <span class="form__email">Correo*</span>
+          <input
+            class="form__email-input"
+            placeholder="Escribe tu Email"
+            type="email"
+            name="correo"
+            id="correo"
+            autocomplete="email"
+            required
+          />
+        </label>
+        <label class="form__label" for="asunto">
+          <span class="form__subject">Asunto*</span>
+          <input
+            class="form__subject-input"
+            placeholder="Escribe el título de tu mensaje"
+            type="text"
+            name="asunto"
+            id="asunto"
+            required
+          />
+        </label>
+        <label class="form__label" for="mensaje">
+          <span class="form__mensaje">Mensaje*</span>
+          <textarea
+            form="formulario"
+            maxlength="100"
+            class="form__mensaje-input"
+            name="mensaje"
+            wrap="hard"
+            cols="30"
+            rows="10"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
 
-        <footer>
-            <figure class="footer__arrow">
-                <img src="../assets/icons/arrow.png" alt="Go back">
-            </figure>
-            <a class="footer__back" href="./index.html">Volver</a>
-            <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
-        </footer>
-    </body>
+    <footer>
+      <a class="footer__back" href="./index.html">
+        <img
+          class="footer__arrow"
+          src="../assets/icons/arrow-back.png"
+          alt="Go back"
+        />
+        Volver
+      </a>
+      <p class="footer__text">Web desarrollada por: Andrea Sierra</p>
+    </footer>
+    <script type="module">
+      import { navShow } from "../JS/index.js";
+      navShow();
+    </script>
+  </body>
 </html>
